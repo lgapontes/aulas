@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <title>Desenvolvimento Web</title>
+    </head>
+    <body>
+
+        <form method="POST" action="back-end.php">
+
+            <label for="nome">Nome:</label>
+            <input
+                type="text" id="nome" name="nome"
+                tabindex="1" autofocus
+                placeholder="Digite seu nome" />
+            <br />
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input
+                type="text" id="sobrenome" name="sobrenome"
+                tabindex="2" placeholder="Digite seu sobrenome" />
+            <br />
+
+            <label for="linguagem">Linguagem preferida:</label>
+            <select id="linguagem" name="linguagem" tabindex="3">
+                <option value="" disabled selected>Selecione</option>
+                <option value="javascript">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="c_sharp">C#</option>
+                <option value="c_plusplus">C++</option>
+                <option value="php">PHP</option>
+                <option value="python">Python</option>
+                <option value="kotlin">Kotlin</option>
+                <option value="swift">Swift</option>
+                <option value="objective_c">Objective C</option>
+                <option value="groovy">Groovy</option>
+                <option value="outras">outras</option>
+            </select>
+            <br />
+
+            <label for="endereco">Endereço:</label><br />
+            <textarea
+                id="endereco" name="endereco"
+                cols="40" rows="5" tabindex="4"
+                placeholder="Digite seu endereço"></textarea>
+            <br />
+            
+            <input type="submit" value="Enviar" tabindex="5" />
+        </form>
+
+    </body>
+</html>
